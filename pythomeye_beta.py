@@ -13,6 +13,21 @@ Usage:
   3) python phantomeye_demo_ui.py
   4) Open dashboard: http://127.0.0.1:5001/
 
+📧 How to Get Your Gmail App Password
+If you use Gmail for sending alerts, you must create an App Password (not your normal login password).
+
+1.Go to Google Account Security.
+
+2.Enable 2-Step Verification.
+
+3.Scroll to "App passwords" section.
+
+4.Choose App: Mail
+
+5.Device: Other (Custom name) → Enter PhantomEye
+
+6.Click Generate — Copy the 16-character password shown.
+
 Test:
 
 Safe request (forwarded to backend):
@@ -461,3 +476,4 @@ if __name__ == "__main__":
         asyncio.run(start_proxy())
     except KeyboardInterrupt:
         print("Shutting down PhantomEye demo.")
+
